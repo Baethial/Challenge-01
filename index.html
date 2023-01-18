@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <!-- Links a Fuente Externa  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link Reinicio de Estilos -->
+    <link rel="stylesheet" href="styles-reset.css">
+    <!-- Link a Hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- contenedor Principal -->
+    <section id="contenedor-principal">
+        <!-- Icono Alura -->
+        <img id="icono-alura" src="src/icono-alura.svg" alt="icono-alura">
+        <!-- Formulario -->
+        <div id="contenedor-interno">
+            <!-- Area para escribir el mensaje -->
+            <textarea name="" id="texto-entrada" placeholder="Ingrese el texto aqui"></textarea>
+            <!-- Mensaje Alerta -->
+            <div id="contenedor-alerta">
+                <!-- Icono Alerta -->
+                <img id="icono-alerta" src="src/icono-alerta.svg" alt="icono-alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <!-- Contenedor Botones -->
+            <div id="contenedor-botones">
+                <!-- Botones -->
+                <button class="boton" id="boton-encriptar">Encriptar</button>
+                <button class="boton" id="boton-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <!-- Contenedor Resultado -->
+        <div id="contenedor-resultado">
+            <!-- Area para la respuesta -->
+            <textarea class="oculto" name="" id="texto-salida" cols="30" rows="10" readonly></textarea>
+            <div id="contenedor-persona">
+                <!-- Imagen Persona -->
+                <img id="imagen-persona" src="src/imagen-persona.svg" alt="imagen-persona">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="boton oculto" id="boton-copiar">Copiar</button>
+        </div>
+    </section>
+    <!-- Link a Hoja de Scripts -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+/* Colores */
+:root {
+    /* Tonos Oscuros */
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    /* Tonos Claros */
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    /* Tonos Grises */
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    /* Gris Claro */
+    --light-gray: #D8DFE8;
+    /* Fuente */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
+body {
+    background-color: var(--light-blue-100);
+}
+
+/* Contenedor Principal */
+#contenedor-principal {
+    background-color: var(--light-blue-100);
+    box-sizing: border-box;
+    /* width: 1440px; */
+    /* height: 1024px; */
+    width: 100vw;;
+    height: auto;
+    padding: 40px 40px 40px 84px;
+
+}
+
+/* Icono Alura */
+#icono-alura {
+    vertical-align: top;
+}
+
+/* Formulario */
+#contenedor-interno {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 128px 0 32px 124.9px;
+    height: 100%;
+}
+
+/* Contenedor Resultado */
+#contenedor-resultado {
+    vertical-align: top;
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    float: right;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+/* Texto de Entrada */
+#texto-entrada {
+    background-color: var(--light-blue-100);
+    width: 680px;
+    height: 683px;
+    padding: 0;    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--dark-blue-300);
+    display: block;
+    resize: none;
+    border-style: none;
+    outline-style: none;
+}
+
+/* Contenido Inicial */
+::placeholder {
+    color: var(--dark-blue-300);
+}
+
+/* Contenedor Alerta */
+#contenedor-alerta {
+    display: flex;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+/* Icono Alerta */
+#icono-alerta {
+    display: inline;
+    
+}
+
+/* Parrafo Alerta */
+#contenedor-principal p {
+    display: inline-block;
+    margin: 0 0 0 8px;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.8;
+}
+
+/* Contenedor Botones */
+#contenedor-botones {
+    width: 680px;
+    height: 67px;
+    display: flex;
+    /* align-items: flex-start; */
+    gap: 24px;
+}
+
+/* Botones */
+.boton {
+    box-sizing: border-box;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border: 1px solid;
+    border-radius: 24px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Boton Encriptar */
+#boton-encriptar {
+    color: white;
+    background-color: var(--dark-blue-300);
+    border-color: var(--dark-blue-300);
+}
+
+/* Boton Desencriptar */
+#boton-desencriptar {
+    color: var(--dark-blue-300);
+    background-color: var(--light-gray);
+}
+
+/* Contenedor Resultado */
+#contenedor-resultado {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+/* Texto Resultado */
+#texto-salida {
+    width: 336px;
+    height: 781px;
+    max-height: 781px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    box-sizing: border-box;
+    resize: none;
+    border-style: none;
+    outline: none;
+}
+
+/* Contenedor Imagen Persona */
+#contenedor-persona {
+    height: 100%;
+    text-align: center;
+}
+
+/* Imagen Persona */
+#imagen-persona {
+    margin: 211px 0 32px 0;
+}
+
+/* Mensaje: ningun mensaje encontrado */
+#contenedor-persona h2 {
+    color: var(--gray-500);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+/* Mensaje: ingresa texto... */
+#contenedor-persona p {
+    color: var(--gray-400);
+    font-size: 16px;
+    line-height: 150%; 
+    text-align: center;
+    margin: 0 0 144px 0;
+}
+
+/* Boton Copiar */
+#boton-copiar {
+    color: var(--dark-blue-300);
+    background-color: white;
+}
+
+/* Clase para ocultar elementos */
+.oculto {
+    display: none;
+}
+
+/*Responsive Tablet*/
+@media screen and (max-width:768px) {
+
+    #contenedor-principal {
+        padding: 73px 40px 40px 40px;
+    }
+
+    #contenedor-interno {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 120px 0 64px 0;
+        height: 100%;
+    }
+
+    #texto-entrada {
+        background-color: var(--light-blue-100);
+        width: 688px;
+        height: 596px;
+        min-height: 596px;
+        padding: 0;    
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: var(--dark-blue-300);
+        display: block;
+        resize: none;
+        border-style: none;
+        outline-style: none;
+    }
+
+    #contenedor-botones {
+        width: 688px;
+        height: 67px;
+    }
+
+    #contenedor-resultado {
+        float: none;
+        width: 688px;
+        height: 100%;
+    }
+
+    #texto-salida {
+        width: 624px;
+        height: 180px;
+    }
+
+    #imagen-persona {
+        display: none;
+    }
+
+    #contenedor-persona p {
+        margin: 0;
+    }
+
+    #boton-copiar {
+        width: 100%;
+    } 
+}
+
+/*Responsive Celular*/
+@media screen and (max-width:376px) {
+
+    #contenedor-principal {
+        padding: 24px 16px 40px 16px;
+    }
+
+    #contenedor-interno {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 80px 0 64px 0;
+        height: 100%;
+    }
+
+    #texto-entrada {
+        background-color: var(--light-blue-100);
+        width: 343px;
+        height: 299px;
+        min-height: 299px;
+        padding: 0;    
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: var(--dark-blue-300);
+        display: block;
+        resize: vertical;
+        border-style: none;
+        outline-style: none;
+    }
+
+    #contenedor-botones {
+        width: 343px;
+        height: 158px;
+        flex-direction: column;
+    }
+
+    #contenedor-resultado {
+        float: none;
+        width: 343px;
+        height: fit-content;
+    }
+
+    #texto-salida {
+        width: 263px;
+        height: 180px;
+    }
+
+    #imagen-persona {
+        display: none;
+    }
+
+    #contenedor-persona p {
+        margin: 0;
+    }
+
+    #boton-copiar {
+        width: 100%;
+    } 
+}
